@@ -26,4 +26,5 @@ export default {
   devServer: {
     port: WDS_PORT,
   },
+  mode: isProd ? 'production' : 'development',
 }
