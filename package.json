@@ -26,7 +26,8 @@
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.5.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
