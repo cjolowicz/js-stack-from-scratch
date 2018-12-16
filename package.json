@@ -21,8 +21,10 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
     "cross-env": "^5.2.0",
@@ -38,7 +40,9 @@
     "jest": "^23.6.0",
     "nodemon": "^1.18.9",
     "pm2": "^3.2.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10"
   },
   "husky": {
     "hooks": {
