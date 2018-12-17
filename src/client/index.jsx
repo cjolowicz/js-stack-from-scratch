@@ -19,6 +19,10 @@ const store = createStore(combineReducers({ hello: helloReducer }),
 
 const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
 
+if (rootEl == null) {
+  throw new Error('no root element')
+}
+
 const wrapApp = (AppComponent, reduxStore) => (
   <Provider store={reduxStore}>
     <AppContainer>
