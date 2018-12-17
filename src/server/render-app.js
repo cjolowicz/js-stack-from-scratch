@@ -3,8 +3,7 @@
 import { APP_CONTAINER_CLASS, STATIC_PATH, WDS_PORT } from '../shared/config'
 import { isProd } from '../shared/util'
 
-const renderApp = (title: string) => (
-`<!doctype html>
+const renderApp = (title: string) => (`<!doctype html>
 <html>
   <head>
     <title>${title}</title>
