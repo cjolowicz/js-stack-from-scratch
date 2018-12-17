@@ -29,6 +29,7 @@ const wrapApp = (AppComponent, reduxStore) => (
 
 ReactDOM.render(wrapApp(App, store), rootEl)
 
+// flow-disable-next-line
 if (module.hot) {
   // flow-disable-next-line
   module.hot.accept('./app', () => {
