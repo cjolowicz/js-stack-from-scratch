@@ -5,6 +5,7 @@ import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import {
   createStore,
@@ -33,9 +34,11 @@ if (rootEl == null) {
 
 const wrapApp = (AppComponent, reduxStore) => (
   <Provider store={reduxStore}>
-    <AppContainer>
-      <AppComponent />
-    </AppContainer>
+    <BrowserRouter>
+      <AppContainer>
+        <AppComponent />
+      </AppContainer>
+    </BrowserRouter>
   </Provider>
 )
 
