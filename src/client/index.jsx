@@ -10,7 +10,7 @@ import {
   createStore,
   combineReducers,
   applyMiddleware,
-  compose
+  compose,
 } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
