@@ -6,7 +6,8 @@ type Props = {
   message: string,
 }
 
-const Message = ({ message }: Props) =>
+const Message = ({ message }: Props) => (
   <p>{message}</p>
+)
 
 export default Message
