@@ -15,8 +15,8 @@ import {
 } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
-import App from './app'
-import helloReducer from './reducer/hello'
+import App from '../shared/app'
+import helloReducer from '../shared/reducer/hello'
 import { APP_CONTAINER_SELECTOR } from '../shared/config'
 import { isProd } from '../shared/util'
 
@@ -47,9 +47,9 @@ ReactDOM.render(wrapApp(App, store), rootEl)
 // flow-disable-next-line
 if (module.hot) {
   // flow-disable-next-line
-  module.hot.accept('./app', () => {
+  module.hot.accept('../shared/app', () => {
     // eslint-disable-next-line global-require
-    const NextApp = require('./app').default
+    const NextApp = require('../shared/app').default
     ReactDOM.render(wrapApp(NextApp, store), rootEl)
   })
 }
