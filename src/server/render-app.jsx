@@ -17,7 +17,8 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
       <StaticRouter location={location} context={routerContext}>
         <App />
       </StaticRouter>
-    </Provider>)
+    </Provider>
+  )
 
   return (`<!doctype html>
 <html>
