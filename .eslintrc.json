@@ -10,6 +10,7 @@
   "rules": {
     "semi": [2, "never"],
     "no-unexpected-multiline": 2,
+    "react/jsx-one-expression-per-line": "single-child",
     "compat/compat": 2
   },
   "settings": {
