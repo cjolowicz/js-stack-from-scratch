@@ -34,6 +34,7 @@ const renderApp = (location: string, plainPartialState: ?Object, routerContext: 
     <script src="${isProd ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/js/bundle.js"></script>
   </body>
 </html>
-`)}
+`)
+}
 
 export default renderApp
