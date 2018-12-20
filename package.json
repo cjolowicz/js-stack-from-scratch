@@ -13,6 +13,10 @@
     "lint": "eslint src webpack.config.babel.js --ext .js,.jsx",
     "test": "yarn lint && flow && jest --coverage"
   },
+  "engines": {
+    "node": "10.x",
+    "yarn": "1.12.3"
+  },
   "husky": {
     "hooks": {
       "pre-push": "yarn test && yarn prod:build"
